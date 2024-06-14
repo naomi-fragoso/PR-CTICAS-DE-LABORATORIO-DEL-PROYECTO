@@ -1,0 +1,917 @@
+body{
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    border-bottom: 2px solid #dfdfdf;
+    padding-bottom: 10px;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+
+}
+
+img{
+    margin-right: 10px;
+}
+
+
+/* Aqui Empieza la parte de la clase de Menú*/
+.menu li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.menu a{
+    font-size: 27px;
+    font-family: Anton; /* Cambiar estilo de letra a los <li> <a> de secciones*/
+    color: rgb(243, 157, 86);
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #faaf84;
+    
+}
+
+/* Aqui Empieza la parte de la clase de Secciones*/
+.secciones {
+    padding: 8px 0; /* Espacio interno superior e inferior */
+    text-align: center; /* Centrar el texto */
+    
+}
+.secciones ul {
+    list-style: none; /* Eliminar los estilos de lista predeterminados */
+    margin: 0; /* Eliminar el margen */
+    padding: 0; /* Eliminar el relleno */
+}
+
+
+
+.secciones li{
+    display: inline-block;
+    padding: 0px 13px;
+}
+.secciones a{
+    font-size: 22px;
+    font-family: Anton; /* Cambiar estilo de letra a los <li> <a> de secciones*/
+    text-decoration: none;
+
+    display: block; /* Convertir los enlaces en bloques */
+    padding: 10px 8px;
+}
+
+
+
+/* Color para cada texto de los <li> de la clase de secciones  y su hover*/
+.elemento-1 {
+    color: #F14F4F; 
+}
+.elemento-1:hover {
+    color: #da0000; 
+}
+.elemento-2 {
+    color: #FAE05C; 
+}
+.elemento-2:hover {
+    color: #d8b509; 
+}
+.elemento-3 {
+    color: #C9F197; 
+}
+.elemento-3:hover {
+    color: #b6f16d; 
+}
+.elemento-4 {
+    color: #9F1F1B; 
+}
+.elemento-4:hover {
+    color: #7e0804; 
+}
+.elemento-5 {
+    color: #8C52FF; 
+}
+.elemento-5:hover {
+    color: #5f1ee0; 
+}
+.elemento-6 {
+    color: #CAF7FF; 
+}
+.elemento-6:hover {
+    color: #52c5da; 
+}
+.elemento-7 {
+    color: #FEB3A0; 
+}
+.elemento-7:hover {
+    color: #e47a60; 
+}
+
+.head2{
+    border-bottom: 2px solid #dfdfdf;
+    padding-bottom: 10px;
+}
+
+
+/* Aqui empieza el estilo para acomodar logo, texto del logo y menu*/
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+}
+.customer-support{
+    display: flex;
+    align-items: center;
+    gap: 2rem ;
+}
+.customer-support i{
+    font-size: 3.3rem;
+}
+.content-customer-support{
+    display: flex;
+    flex-direction: column;
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.text1{
+    font-family: ADLaM Display;
+    font-size: 26px;
+    color: #cbf792;
+}
+.text2{
+    font-family: Anton;
+    font-size: 20px;
+    color: #cbf792;
+}
+
+
+/*Seccion del formulario*/
+form {
+    max-width: 600px;
+    margin: auto;
+}
+label{
+ display: block;  
+  background-color: #d2b48c;  
+  font-size: 21px;
+}
+input{
+    background-color:#ffffff;
+    color: black;
+    font-size: 16px;
+}
+.label-nombre {
+    background-color: #eedcc6; 
+}
+.label-correo {
+    background-color: #9fd5e7; 
+}
+.label-edad {
+    background-color: #ffd3ac; 
+}
+.label-genero {
+    background-color: #b1e6b3; 
+}
+.label-pregunta1 {
+    background-color: #ffffae;
+}
+.label-pregunta2 {
+    background-color: #cacafa; 
+}
+.label-pregunta3 {
+    background-color: #fda4b3;
+}
+.label-pregunta4 {
+    background-color: #79ccec; 
+}
+.label-pregunta5 {
+    background-color: #f08080;
+}
+.label-pregunta6 {
+    background-color: #abffff;
+}
+textarea{
+    background-color:#ffffff;
+
+}
+    .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 10px); /* Reducir el ancho del input para dejar espacio para el borde */
+    padding: 5px;
+    color: #666666; /* Color del texto del input */
+    border: 1px solid #cccccc; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados del input */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centrar los botones horizontalmente */
+    margin-top: 10px; /* Agregar espacio entre el último input y los botones */
+}
+
+/*Seccion de el checkbox*/
+.condiciones1 label {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.condiciones1 input[type="checkbox"] {
+    margin-right: 10px; /* Ajusta el espacio entre el checkbox y el texto */
+    border-radius: 5px; /* Bordes redondeados del input */
+}
+
+.condiciones1 span {
+    color: #000000; /* Cambia el color del texto */
+}
+
+/*Checkbox de politicas*/
+.condiciones2 label {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.condiciones2 input[type="checkbox"] {
+    margin-right: 10px; /* Ajusta el espacio entre el checkbox y el texto */
+    border-radius: 5px; /* Bordes redondeados del input */
+}
+
+.condiciones2 span {
+    color: #000000; /* Cambia el color del texto */
+}
+
+/*Seccion de botones*/
+.button-container input[type="submit"],
+.button-container input[type="reset"] {
+    background-color: #9563BA; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Padding del botón */
+    border: none; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+    margin-right: 10px; /* Margen derecho entre botones */
+    margin-bottom: 4px;
+    font-size: 19px;
+}
+
+.button-container input[type="submit"]:hover,
+.button-container input[type="reset"]:hover {
+    background-color: #BB85E3 ; /* Color de fondo del botón al pasar el cursor */
+    
+}
+
+.espacio1 {
+    margin-bottom: 25px; /* Puedes ajustar el valor según sea necesario */
+}
+
+.box1{
+    text-align: center;
+    
+}
+
+.box1 h1{
+    
+  font-size: 26px;
+  color: white;
+  font-family: Helvetica;
+}
+.espacio2 {
+    margin-bottom: 55px; /* Puedes ajustar el valor según sea necesario */
+}
+select {
+    font-size: 17px; /* Tamaño de la fuente */
+    border-radius: 5px;
+}
+.boxdatos{
+    background-color: rgb(177, 155, 189);
+    border-radius: 5px;
+    color: rgb(67, 3, 87);
+    font-size: 19px;
+    text-align: center;
+    width: 400px;
+    height: 52px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.espaciodatosp{
+  margin-bottom: 40px;
+}
+.espacio3 {
+    margin-bottom: 17px; /* Puedes ajustar el valor según sea necesario */
+}
+.espacio4 {
+    margin-bottom: 60px; /* Puedes ajustar el valor según sea necesario */
+}
+.boxencuesta{
+    background-color: rgb(177, 155, 189);
+    border-radius: 5px;
+    color: rgb(67, 3, 87);
+    font-size: 19px;
+    text-align: center;
+    width: 500px;
+    height: 49px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.espacio5 {
+    margin-bottom: 18px; /* Puedes ajustar el valor según sea necesario */
+}
+.encuesta {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.encuesta label {
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+.encuesta textarea {
+    width: calc(100% - 10px); /* Reducir el ancho del input para dejar espacio para el borde */
+    padding: 5px;
+    color: #000000; /* Color del texto del input */
+    border: 1px solid #cccccc; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados del input */
+    background-color: white;
+    font-size: 17px;
+}
+.label-calificacion {
+    background-color: #c1d48d;
+}
+.label-comentario {
+    background-color: #e2ad7c;
+}
+.formulario h2{
+color: #e47a60;
+font-size: 55.6px;
+}
+
+
+
+/*Seccion de la parte de titulo*/
+
+.introduccion {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el div .introduccion */
+  }
+  
+  .contenedor {
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen y el título */
+    margin-right: 20px; /* Espacio del lado derecho de la imagen */
+    margin-left: 20px; /* Espacio del lado izquierdo del título */
+  }
+  
+  .gift {
+    max-width: 300px; /* Ajusta el ancho máximo de la imagen según sea necesario */
+    border-radius: 8px;
+    width: 300px;
+    height: 320px;
+  }
+  
+  .titulo {
+    margin-left: 20px; /* Espacio entre la imagen y el título */
+    font-size: 48px;
+    color: #bde28d;
+    font-family: Cambria;
+  }
+  .espacio6 {
+    margin-bottom: 10px; /* Puedes ajustar el valor según sea necesario */
+    
+
+}
+.espacio7 {
+    margin-bottom: 3px; /* Puedes ajustar el valor según sea necesario */
+    
+
+}
+/*Seccion de la parte de introduccion*/
+
+.introduccion {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+  .contenedor2 {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    max-width: 800px; /* Ancho máximo del contenedor */
+  }
+  .texto h2{
+    font-size: 55.6px;
+    color: #F14F4F;
+  }
+  .texto {
+    margin-bottom: 10px; /* Espacio entre el texto y la imagen */
+    color: white;
+    font-size: 24px; 
+ }
+  
+  .titulo, .parrafo {
+    text-align: center; /* Centra horizontalmente el texto */
+  }
+  
+  .parrafo {
+    margin-top: 10px; /* Espacio superior al párrafo */
+  }
+  
+  .video {
+    border-radius: 8px;
+    width: 700px;
+    height: 400px;
+  }
+
+
+
+/*Drogas*/ /*Titulo de que son las drogas*/
+.drogatitu {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el div .introduccion */
+  }
+  
+  .contenedor {
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen y el título */
+    margin-right: 20px; /* Espacio del lado derecho de la imagen */
+    margin-left: 20px; /* Espacio del lado izquierdo del título */
+  }
+  
+  .gift {
+    max-width: 300px; /* Ajusta el ancho máximo de la imagen según sea necesario */
+    border-radius: 8px;
+    width: 300px;
+    height: 320px;
+  }
+  
+  .titulo2 {
+    margin-left: 20px; /* Espacio entre la imagen y el título */
+    font-size: 48px;
+    color: #FAE05C;
+    font-family: Cambria;
+  }
+  .espacio6 {
+    margin-bottom: 10px; /* Puedes ajustar el valor según sea necesario */
+    
+
+}
+.espacio7 {
+    margin-bottom: 70px; /* Puedes ajustar el valor según sea necesario */
+    
+
+}
+/*Texto*/
+.drogas {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+  .contenedor3 {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    max-width: 800px; /* Ancho máximo del contenedor */
+  }
+  .contenedor3 h1{
+    color: #FAE05C;
+    text-align: center;
+  }
+  .texto2 h2{
+    font-size: 55.6px;
+    color: #FAE05C;
+  }
+  .texto2 {
+    margin-bottom: 10px; /* Espacio entre el texto y la imagen */
+    color: white;
+    font-size: 24px; 
+ }
+  
+  .titulo2, .parrafo2 {
+    text-align: center; /* Centra horizontalmente el texto */
+  }
+  
+  .parrafo2 {
+    margin-top: 10px; /* Espacio superior al párrafo */
+    text-align: center;
+  }
+  
+  /*Tabla de tipos de drogas*/
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 90%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #333;
+    color: white;
+  }
+
+
+  /*Seccion de adicciones*/
+  .adiccion {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+  .contenedor4 {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    max-width: 800px; /* Ancho máximo del contenedor */
+  }
+  .texto4 h2{
+    font-size: 55.6px;
+    color: #C9F197;
+  }
+  .texto4 {
+    margin-bottom: 10px; /* Espacio entre el texto y la imagen */
+    color: white;
+    font-size: 24px; 
+ }
+ .texto4 h3{
+    font-size: 40px;
+    color: #C9F197;
+    text-align: center;
+ }
+  
+  .titulo4, .parrafo4 {
+    text-align: center; /* Centra horizontalmente el texto */
+  }
+  
+  .parrafo4 {
+    margin-top: 10px; /* Espacio superior al párrafo */
+  }
+  .espacioulli {
+    margin-bottom: 11px; /* Puedes ajustar el valor según sea necesario */
+}
+ol li{
+    font-size: 29px;
+    font-family: Cambria;
+}
+.video2 {
+    border-radius: 8px;
+    width: 700px;
+    height: 400px;
+    display: block; /* Asegura que el elemento sea de tipo bloque */
+    margin: 0 auto; /* Centra horizontalmente el elemento */
+    
+  }
+  .espacio-video{
+    margin-bottom: 35px;
+  }
+  .imagen-adiccion {
+    display: block; /* Asegura que la imagen sea de tipo bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+}
+/*Autor*/
+
+.autor p{
+    font-size: 23px;
+    font-style: italic;
+    margin: 0 0 .75rem;
+    color: white;
+    text-align: center;
+}
+.nombre-autor p{
+    font-size: 20.5px;
+    color: white;
+    text-align: center;
+}
+.nombre-autor p2{
+    font-size: 20.5px;
+    color: rgb(152, 152, 207);
+    text-align: center;
+}
+
+/*seccion de salud mental*/
+.salud {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+  .contenedor5 {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    max-width: 800px; /* Ancho máximo del contenedor */
+  }
+  .texto5 h2{
+    font-size: 55.6px;
+    color: #e63731;
+  }
+  .texto5 {
+    margin-bottom: 10px; /* Espacio entre el texto y la imagen */
+    color: white;
+    font-size: 24px; 
+ }
+  
+  .titulo5, .parrafo5 {
+    text-align: center; /* Centra horizontalmente el texto */
+  }
+  
+  .parrafo5 {
+    margin-top: 10px; /* Espacio superior al párrafo */
+  }
+
+  .texto5 h4{
+    font-size: 43px;
+    color: #e63731;
+    text-align: center;
+ }
+
+  ul li{
+    font-size: 23px;
+    font-family: Cambria;
+    margin-bottom: 9px;
+  }
+  
+
+  .img-salud {
+    width: 350px;
+    height: 350px;    
+    display: block; /* Asegura que la imagen sea de tipo bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+}
+
+
+/*HR*/
+hr {
+    border: none;
+    height: 2px; /* Cambia el grosor del hr */
+    background-color: rgb(151, 151, 151); /* Cambia el color del hr */
+    box-shadow: 0 4px 6px rgba(121, 121, 121, 0.959); /* Agrega una sombra */
+  }
+  /*Seccion de prevencion*/
+
+  .prevencion {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+  .contenedor6 {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    max-width: 800px; /* Ancho máximo del contenedor */
+  }
+  .texto6 h2{
+    font-size: 55.6px;
+    color: #8e60eb;
+  }
+  .texto6 {
+    margin-bottom: 10px; /* Espacio entre el texto y la imagen */
+    color: white;
+    font-size: 24px; 
+ }
+ .texto6 h4{
+    color: #bf8fdb;
+    font-size: 40px;
+    text-align: center;
+}
+  
+  .titulo6, .parrafo6 {
+    text-align: center; /* Centra horizontalmente el texto */
+  }
+  
+  .parrafo6 {
+    margin-top: 10px; /* Espacio superior al párrafo */
+  }
+
+  .img-prevencion {
+    width: 450px;
+    height: 340px;    
+    display: block; /* Asegura que la imagen sea de tipo bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+}
+.prevencion a{
+    font-size: 18px;
+    font-family: arial; /* Cambiar estilo de letra a los <li> <a> de secciones*/
+    color: #7ba4d3e3;
+    text-align: center;
+    display: block; /* Convertir los enlaces en bloques */
+    padding: 10px 8px;
+}
+.prevencion h3{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(236, 186, 236);
+    font-family: Tahoma;
+}
+ol li{
+    font-size: 25px;
+    font-family: Cambria;
+}
+
+
+/*Seccion de importancia*/
+.importancia {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+  .contenedor7 {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    max-width: 800px; /* Ancho máximo del contenedor */
+  }
+  .contenedor7 h1{
+    color: #CAF7FF;
+    text-align: center;
+  }
+  .texto7 h2{
+    font-size: 55.6px;
+    color: #CAF7FF;
+  }
+  .texto7 {
+    margin-bottom: 10px; /* Espacio entre el texto y la imagen */
+    color: white;
+    font-size: 24px; 
+ }
+  
+  .titulo7, .parrafo7 {
+    text-align: center; /* Centra horizontalmente el texto */
+  }
+  
+  .parrafo7 {
+    margin-top: 10px; /* Espacio superior al párrafo */
+    text-align: center;
+  }
+  
+  /*Tabla de tipos de drogas*/
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .table-container p{
+    text-align: center;
+  }
+  
+  table {
+    width: 90%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #333;
+    color: white;
+  }
+
+
+  /*footer*/
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Ajusta el espacio entre los divs */
+    align-items: center; /* Centra verticalmente */
+    background-color: #17181a;
+}
+
+footer div {
+    width: 25%; /* Para que cada div ocupe el 25% del ancho del footer */
+    text-align: center; /* Para centrar el contenido */
+}
+footer .contacto{ /*DIV CONTACTO*/
+  text-align: center;
+  border-radius: 9px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.contacto h2{
+  font-size: 30px;
+  color: rgb(250, 234, 141);
+}
+.contacto h6{
+  font-size: 24px;
+  color: white;
+}
+.contacto a{
+  font-size: 20px;
+  color: white;
+}
+.contacto p{
+  font-size: 20px;
+  color: white;
+}
+.espaciofooter{
+  margin-bottom: 10px;
+}
+footer .acerca{ /*DIV ACERCA*/
+  text-align: center;
+  border-radius: 9px;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-left: 37px;
+}
+.acerca h2{
+  font-size: 27px;
+  color: rgb(185, 255, 171);
+}
+.acerca h6{
+  font-size: 13px;
+  color: white;
+  font-family: Arial;
+}
+.espacio-textacerca{
+  margin-bottom: 4px;
+}
+.acerca p{
+  font-size: 25px;
+  font-family: Times New Roman;
+  color: #e67af5;
+}
+.acerca ol li{
+  font-size: 15px;
+  text-align: center;
+  font-family: Arial;
+}
+.acerca 
+/*ICONOS*/
+footer a{
+  justify-content: center;
+  gap: 20px;
+}
+.redes h2{
+  font-size: 32px;
+  color: rgb(255, 209, 109);
+}
+footer .face{ /*icono face*/
+  color: rgb(7, 111, 248);
+  font-size: 38px;
+}
+footer .insta{ /*icono insta*/
+  color: #e66b82;
+  font-size: 38px;
+}
+/*Derechos*/
+footer2{
+  padding-top: 20px; /* Espacio arriba */
+  padding-bottom: 20px; /* Espacio abajo */
+  background-color: #17181a; /* Color de fondo */
+}
+footer2 .derechos{
+  background-color: #17181a;
+  font-size: 25px;
+  color: white;
+  font-family: Cambria;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+
+
+
+
+
+  
+
+  
+  
